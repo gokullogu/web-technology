@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css2?family=Courgette&family=Patrick+Hand&display=swap');
+
+body{
+    background: linear-gradient(to right, #00b09b, #96c93d);
+    color: white;
+    font-family: 'DM Serif Display', serif;
+}
+
+header{
+    text-align: center;
+    font-size: 10vh;
+    margin-top: 7vh;
+}
+
+.q1{
+    font-size: 8vh;
+    text-align: center;
+    margin: 20vh 1vw;
+    /*font-family: 'Pacifico', cursive;*/
+    font-family: 'Courgette', cursive;
+    padding: 0 7vw;     
+}
+
+.byus{
+  text-align: end;
+  font-family: 'Courgette', cursive;
+  margin-right: 17vw;
+  font-size: 8vh;
+  margin-top: -13vh;
+  color:deeppink;
+}

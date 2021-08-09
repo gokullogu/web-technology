@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <title>Document</title>
+   <style>
+       .div1{
+           background-color: tomato;
+           width: 200px;
+           height: 100px;
+           color: white;
+           padding: 10px 15px;
+           transform: translate(10px,20px);
+       }
+
+       .div2{
+           background-color: rgb(206, 255, 71);
+           width: 200px;
+           height: 100px;
+           color: white;
+           padding: 10px 15px;
+           transform: scale(1,2);
+       }
+
+       .div3{
+           margin:150px;
+           background-color: aqua;
+           width: 100px;
+           height:200px;
+           padding: 10px 20px;
+           transform: scaleX(2);
+       }
+
+       .div4{
+           margin:150px;
+           background-color: aqua;
+           width: 100px;
+           height:200px;
+           padding: 10px 20px;
+           transform: scaleY(2);
+       }
+
+       .div5{
+           margin:150px;
+           background-color: aqua;
+           width: 200px;
+           height:100px;
+           padding: 10px 20px;
+           transform: skew(20deg,10deg);
+        }
+
+        .div6{
+           margin:150px;
+           background-color: aqua;
+           width: 200px;
+           height:100px;
+           padding: 10px 20px;
+           transform: skewX(-40deg);
+        }
+        .div7{
+           margin:150px;
+           background-color: aqua;
+           width: 200px;
+           height:100px;
+           padding: 10px 20px;
+           transform: skewY(20deg);
+        }
+         .div8{
+             margin: 150px;
+           background-color: aqua;
+           width: 200px;
+           height:100px;
+           padding: 10px 20px;
+           /*scaley,skewx,skewy,scaley,translatex,translatey*/
+           transform: matrix(2,1,0,1,2,2);
+        }
+   </style>
+</head>
+<body>
+    <h2>translate(100px,200px)</h2>
+    <div class="div1">this is the transition property demo div1</div>
+    <br/>
+    
+    <h2>scale(100px,200px)</h2>
+    <div class="div2">this is the transition property demo div2</div>
+    <br/>
+
+    <h2>scaleX(2)</h2>
+    <div class="div3">this is the transition property demo div3</div>
+    <br/>
+
+    <h2>scaleY(2)</h2>
+    <div class="div4">this is the transition property demo div4</div>
+    <br/>
+
+    <h2>skew(x,y)</h2>
+    <div class="div5">this is the transition property demo div5</div>
+    <br />
+
+    <h2>skewX</h2>
+    <div class="div6">this is the transition property demo div6</div>
+    <br />
+
+    <h2>skewY</h2>
+    <div class="div7">this is the transition property demo div7</div>
+    <br />
+
+    <h2>matrix</h2>
+    <div class="div8">this is the transition property demo div8</div>
+    <br />
+</body>
+</html>

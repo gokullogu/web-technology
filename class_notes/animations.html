@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>animations</title>
+    <style>
+       /* @keyframes anim1{
+            from {width: 0px;transition: 2s ease-in-out;background-color: red;}
+            to {width: 400px;transition: 2s ease-in-out;background-color: green;}
+        }*/
+
+        @keyframes anim1{
+            from {background-color:red;}
+            to {background-color: green;}
+        }
+        
+        /*linear-gradient(to left, #ff6a00, #ee0979);*/
+        .div1{
+            background-color: antiquewhite;
+            width: 200px;
+            height: 200px;
+            animation-name:anim1 ;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;
+        }
+
+         @keyframes anim2{
+            0% {background:red}
+            20% {background-color:orange}
+            40% {background-color:deeppink}
+            60% {background-color: tomato}
+            80% {background-color:aqua}
+            100% {background-color: green;}
+        }
+        
+        .div2{
+            background-color: rgb(153, 107, 47);
+            width: 200px;
+            height: 200px;
+            animation-name:anim2 ;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;   /*to specify number of repeatation of animation*/
+            animation-delay: 1s;
+            animation-timing-function: ease-in-out;
+        }
+
+    </style>
+</head>
+<body>
+    <p>animate color</p>
+    <div class="div1"></div>
+
+    <p>animate color with percentage</p>
+    <div class="div2"></div>
+</body>
+</html>

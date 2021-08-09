@@ -1,0 +1,30 @@
+body{
+    color: aliceblue;
+    font-size: 3vh;
+    font-family: 'Style Script', cursive;
+    background-color:lightgoldenrodyellow
+ }
+
+.form-container{
+    background-color: aqua;
+    padding: 3vh 2vw;
+    width: 50%;
+    margin: 0 auto;
+     background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    box-shadow: 3px 3px 15px 8px rgb(148, 148, 148);
+}
+
+.submit_btn{
+    width: 100%;
+    padding: 1.5vh 1.5vw;
+    background: #e65c00;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    border: none;
+    border-radius: 25px;
+    padding:2.5vh 0;
+    color: white;
+    font-size: 3vh;
+}

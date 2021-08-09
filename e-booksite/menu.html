@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bootstrap Example</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+    
+    </style>
+</head>
+<body>
+    <div class="container-fluid" style="padding: 0;">
+        <div id="bookCat">
+            <div class="card">
+                <div class="card-header"  data-toggle="collapse" href="#bookCatList" style="background-color: rgb(228, 64, 14);color:white">
+                        Book categories
+                </div>
+                <div id="bookCatList" class="list-group list-group-flush collapse" data-parent="#bookCat">
+                    <a href="./directories/art.html" class="list-group-item list-group-item-action"
+                        target="contents">
+                            <img src="https://openlibrary.org/static/images/categories/art.svg"
+                                alt="logo" class="navbar-brand" style="width:25px;">
+                        art</a>
+                    <a href="./directories/business.html" class="list-group-item list-group-item-action" target="contents">
+                        <img src="https://image.flaticon.com/icons/png/128/1006/1006555.png" alt="logo" class="navbar-brand"
+                            style="width:25px;">
+                        bussiness</a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <img src="https://openlibrary.org/static/images/categories/science_fiction.svg" alt="logo" class="navbar-brand" style="width:25px;">
+                        science fiction</a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <img src="https://openlibrary.org/static/images/categories/fantasy.svg" alt="logo" class="navbar-brand"
+                            style="width:25px;">
+                        fantasy</a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <img src="https://openlibrary.org/static/images/categories/biographies.svg" alt="logo" class="navbar-brand"
+                            style="width:25px;">
+                        biographies</a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <img src="https://openlibrary.org/static/images/categories/recipes.svg" alt="logo" class="navbar-brand"
+                            style="width:25px;">
+                        recipes</a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <img src="https://openlibrary.org/static/images/categories/romance.svg" alt="logo" class="navbar-brand"
+                            style="width:25px;">
+                        romance</a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <img src="https://openlibrary.org/static/images/categories/history.svg" alt="logo" class="navbar-brand"
+                            style="width:25px;">
+                        history</a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <img src="https://openlibrary.org/static/images/categories/medicine.svg" alt="logo" class="navbar-brand"
+                            style="width:25px;">
+                        medicine</a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <img src="https://openlibrary.org/static/images/categories/religion.svg" alt="logo" class="navbar-brand"
+                            style="width:25px;">
+                        religion</a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <img src="https://openlibrary.org/static/images/categories/music.svg" alt="logo" class="navbar-brand"
+                            style="width:25px;">
+                        music</a>
+                    <a href="#" class="list-group-item list-group-item-action">
+                        <img src="https://openlibrary.org/static/images/categories/mystery_and_detective_stories.svg" alt="logo" class="navbar-brand"
+                            style="width:25px;">
+                     mysteries and detective stories</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="others">
+            <div class="card">
+                <div class="card-header" data-toggle="collapse" href="#othersList" style="background-color: rgb(11, 198, 211);color:white;">
+                        others
+                </div>
+                <div id="othersList" class="list-group list-group-flush collapse" data-parent="#bookCat">
+                    <a href="#" class="list-group-item list-group-item-action">others</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

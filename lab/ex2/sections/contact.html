@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Contact</title>
+    <style>
+         body{
+            background: url('https://images.pexels.com/photos/62693/pexels-photo-62693.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');
+            font-family: 'DM Serif Display', serif;
+        }
+        input,textarea{
+           outline: 2px solid green;
+        }
+
+        .header{
+           text-align: center;
+           margin:20vh 0 10vh;
+        }
+
+        .input_decor{
+            padding: 2vh 2vw;
+            margin-bottom: 3vh;
+            border-radius: 30px;
+            width: 400px;
+            border: none;
+        }
+
+        .input_decor[type=text]:focus,.message_decor:focus {
+        border: 2px solid green;
+        }
+        .message_decor{
+            padding: 2vh 2vw;
+            margin-bottom: 3vh;
+            width: 400px; 
+            border-radius: 10px;
+            border: none;
+        }
+        .input_icon{
+            width: 7vw;
+            height: 17vh;
+        }
+        .form_cont{
+            width: 35%;
+            margin:0 auto;
+        }
+        .submitbtn{
+            padding: 10px 15px;
+            width: 103%;
+            border-radius: 30px;
+            color: white;
+            background-color: green;
+            border:none;
+        }
+    </style>
+   <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Style+Script&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+<form class="form_cont">
+        <h1 class="header">have some questions ?</h1>
+            <input type="text" placeholder="first name" class="input_decor"><br/>
+            <input type="text" placeholder="last name" class="input_decor"><br/>
+            <input type="text" placeholder="your email" class="input_decor"><br/>
+            <textarea class="message_decor" placeholder="your message" rows="5"></textarea><br/>
+            <input type="submit" value="send message" class="submitbtn">
+        </form>
+</body>
+</html>

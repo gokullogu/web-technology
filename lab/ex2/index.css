@@ -1,0 +1,196 @@
+    table,
+    td,
+    tr {
+    border: 3px solid #C5CFD5;
+    border-collapse: collapse;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    font-weight: bold;
+    }
+
+    table{
+        width: 60%;
+        height: 75vh;
+        font-size: 4vh;
+        margin: 0 auto;
+        background: #348F50;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #56B4D3, #348F50);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #56B4D3, #348F50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+ }
+
+body{
+    /*background: url('https://images.pexels.com/photos/7171398/pexels-photo-7171398.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500');*/
+    font-size: 3vh;
+    margin: 0;
+    font-family: 'DM Serif Display', serif;
+}
+
+
+header,footer{
+    padding: 2vw 3vh;
+    height: 20%;
+    text-align: center;
+    color: white;
+    background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin-top: -1vh;
+}
+
+.nav-bar{
+    margin:0 auto;
+    background-color:#333333;
+    padding: 15px 0px;
+    position: sticky;
+    top:0%;
+}
+
+.nav-menu{
+    display: inline;
+    background-color:#333333;
+    margin: 0;
+    padding:15px 15px;
+}
+.nav-menu:hover{
+    padding: 15.5px 15px;
+    background-image: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+}
+
+.nav-link{
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+}
+
+.reg_btn{
+   text-decoration: none;
+   display: inline;
+   float: right;
+   color: white;
+   margin-right: 1%;
+   background-color:rgb(4,170,109);
+   padding: 7px 15px;
+   margin-top: -7px;
+   border-radius: 20px;
+}
+.reg_btn:hover{
+ background: #12c2e9;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #f64f59, #c471ed, #12c2e9);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #f64f59, #c471ed, #12c2e9); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+}
+.header_title{
+    text-align: center;
+}
+
+
+     @keyframes anim2{
+            0% {background:linear-gradient(to right, #f12711, #f5af19);}
+            20% {background:linear-gradient(to right, #8360c3, #2ebf91)}
+            40% {background:linear-gradient(to right, #ff416c, #ff4b2b);}
+            60% {background:linear-gradient(to right, #11998e, #38ef7d); }
+            80% {background: linear-gradient(to right, #fc466b, #3f5efb);}
+            100% {background: linear-gradient(to right, #22c1c3, #fdbb2d)}
+        }
+        
+        .book_shelf{
+            width: 100%;
+            height: 70vh;
+            margin-bottom: 4vh;
+            text-align: center;
+            margin-top: 0;
+            background: linear-gradient(to left, #556270, #4ECDC4);
+            animation-name:anim2 ;
+            animation-duration: 4s;
+            animation-iteration-count: infinite;   /*to specify number of repeatation of animation*/
+            animation-delay: 1s;
+            animation-timing-function: linear;
+            box-sizing: border-box;
+        }
+
+.book_shelf_quotes{
+    margin: 0;
+    color:rgb(255, 255, 255);
+    font-family: 'Style Script', cursive;
+    font-family: 'Courgette', cursive;
+    padding-top: 15%;
+    font-size: 7vh;
+}
+
+.cover_image{
+    width: 100%;
+    height: 85vh;
+}
+.cover_image_container{
+    margin-top: -4vh;
+}
+.cover_image_desc{
+    padding: 6vh 2vw;
+    background: #e65c00;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #F9D423, #e65c00);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #F9D423, #e65c00); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  text-align: center;
+    margin-top: -1vh;
+}
+
+.book_details{
+margin-top: -3.5vh;
+text-align: center;
+background: #00416A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #E4E5E6, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #E4E5E6, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+padding: 3vh 2vw;
+}
+
+.book_details_title{
+   background: #ee0979;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to left, #ff6a00, #ee0979);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to left, #ff6a00, #ee0979); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: white;
+    padding: 5vh 2vw;
+    width: 56%;
+    margin: 3vh auto;
+    border-radius: 50px;
+}
+
+
+
+.dropbtn {
+  background-color: #333333;
+  color: white;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  margin-top: 2vh;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {    background-image: linear-gradient(to right, #f64f59, #c471ed, #12c2e9);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+

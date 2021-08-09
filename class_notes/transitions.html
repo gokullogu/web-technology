@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Document</title>
+    <style>
+       .div1{
+           width: 200px;
+           height: 100px;
+           background-color: aqua;
+           transition:height 2s ;
+       }
+       .div1:hover{
+           height: 200px;
+       }
+
+       .div2{
+           width: 100px;
+           height: 100px;
+           background-color: rgb(238, 255, 0);
+           transition:height 2s ,width 3s;
+       }
+       .div2:hover{
+           height: 200px;
+           width: 200px;
+       }
+
+       .div3{
+           width: 100px;
+           height: 100px;
+           background-color: rgb(60, 255, 0);
+           transition-property:width;
+           transition-duration: 2s;
+           transition-timing-function:linear;
+       }
+       .div3:hover{
+           width: 200px;
+       }
+
+        .div4{
+           width: 100px;
+           height: 100px;
+           background-color: rgb(17, 0, 255);
+           transition-property:width;
+           transition-duration: 2s;
+           transition-timing-function:ease;
+       }
+       .div4:hover{
+           width: 200px;
+       }
+
+       
+        .div5{
+           width: 100px;
+           height: 100px;
+           background-color: rgb(255, 123, 0);
+           transition-property:width;
+           transition-duration: 2s;
+           transition-timing-function:ease-in;
+       }
+       .div5:hover{
+           width: 200px;
+       }
+
+       
+        .div6{
+           width: 100px;
+           height: 100px;
+           background-color: rgb(0, 174, 255);
+           transition-property:width;
+           transition-duration: 2s;
+           transition-timing-function:ease-out;
+       }
+       .div6:hover{
+           width: 200px;
+       }
+
+       
+        .div7{
+           width: 100px;
+           height: 100px;
+           background-color: rgb(219, 0, 248);
+           transition-property:width;
+           transition-duration: 2s;
+           transition-timing-function:ease;
+       }
+       .div7:hover{
+           width: 200px;
+       }
+
+       
+        .div8{
+           width: 100px;
+           height: 100px;
+           background-color: rgb(255, 0, 242);
+           transition-property:width,height,transform;
+           transition-duration: 3s,3s,3s;
+       }
+       .div8:hover{
+           width: 200px;
+           height: 200px;
+           transform: rotate(180deg);
+       }
+    </style>
+</head>
+<body>
+    (works on hover)
+    <p>transition:height 2s</p>
+    <div class="div1"></div>
+
+    <p>transition:height 2s,width 3s</p>
+    <div class="div2"></div>
+
+    <p>height 2s linear</p>
+    <div class="div3"></div>
+
+    <p>height 2s ease</p>
+    <div class="div4"></div>
+
+        <p>height 2s ease-in</p>
+        <div class="div5"></div>
+
+        <p>height 2s ease-out</p>
+        <div class="div6"></div>
+
+            <p>height 2s ease-in-out</p>
+            <div class="div7"></div>
+
+                <p>transition+tranform</p>
+                <div class="div8"></div>
+</body>
+</html>
