@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Gallery</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <style>
+    *{
+          font-family: 'DM Serif Display', serif;
+    }
+    @media (max-width:767px){
+      .container{
+        display:flexbox;
+        flex-direction: column;
+      }
+    }
+     .header{
+       text-align: center;
+       width: 100%;
+       background-image: linear-gradient(to right, #ee0979, #ff6a00);
+       color: white;
+       padding: 25px 10px;
+       margin:0 -8px -8px -8px;
+     }
+     .image_cont{
+       width: 250px;
+       height: 300px;
+       margin-right: 10px;
+       box-shadow:2px 3px 2px 3px rgb(161, 161, 161);
+       transition: -0.5s margin;
+     }
+
+     .image_cont:hover{
+        margin: 6px;
+        background-image: linear-gradient(to right, #ee0979, #ff6a00);
+        
+     }
+
+     .container{
+       display: flex;
+       flex-direction: row;
+       margin-top:15vh;
+     }
+     .image_desc{
+       padding: 15px 10px;
+       text-align: center;
+     }
+     .img_src{
+       width: 95%;
+       height: 95%;
+       margin: 5px 5px 5px;
+     }
+  </style>
+    <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Style+Script&display=swap" rel="stylesheet">
+    
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <h1 class="header">gallery</h1>
+    <div class="container">
+      <div class="image_cont">
+        <img src="https://images.pexels.com/photos/4440123/pexels-photo-4440123.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img_src">
+      </div>
+      <div class="image_cont">
+        <img src="https://images.pexels.com/photos/7034062/pexels-photo-7034062.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img_src">
+      </div>
+      <div class="image_cont">
+        <img src="https://images.pexels.com/photos/5913138/pexels-photo-5913138.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500" class="img_src">
+      </div>
+      <div class="image_cont">
+        <img src="https://images.pexels.com/photos/3640930/pexels-photo-3640930.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          class="img_src">
+      </div>
+      <div class="image_cont">
+        <img src="https://images.pexels.com/photos/3494806/pexels-photo-3494806.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          class="img_src">
+      </div>
+      <div class="image_cont">
+        <img src="https://images.pexels.com/photos/4861373/pexels-photo-4861373.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500"
+          class="img_src">
+      </div>
+    </div>
+</body>
+</html>

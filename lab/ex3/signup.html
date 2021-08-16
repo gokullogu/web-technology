@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>sign up</title>
+        <link rel="stylesheet" href="./register.css">
+        <script>
+            function signup(){
+                
+                var fname = document.forms["signupform"]["first name"];
+                var lname = document.forms["signupform"]["last name"];
+                var email = document.forms["signupform"]["email"];
+                var password = document.forms["signupform"]["password"];
+                var phoneno = document.forms["signupform"]["phoneno"];
+                var gender = document.getElementsByClassName("gender");
+                var dob=document.forms["signupform"]["dob"];
+
+                var agree = document.getElementById("Iagree");
+                var error_tag = document.getElementsByClassName('error_tag');
+                var correct_tag = document.getElementsByClassName('correct_tag');
+                
+                if (fname.value.trim() == "") {
+                    error_tag[0].style.display = "block";
+                    correct_tag[0].style.display = "none";
+                    fname.focus();
+                    return false;
+                }
+                if (fname.value.trim().length < 2 || fname.value.trim().length > 25){
+                    error_tag[0].style.display = "block";
+                    correct_tag[0].style.display = "none";
+                    error_tag[0].innerHTML="number of letters allowed [2-25]";
+                    fname.focus();
+                    return false;
+                }
+                else {
+                    error_tag[0].style.display = "none";
+                    correct_tag[0].style.display = "block";
+                }
+
+                if (lname.value.trim() == "") {
+                    error_tag[1].style.display = "block";
+                    correct_tag[1].style.display = "none";
+                    lname.focus();
+                    return false;
+                }
+                if (lname.value.trim().length < 2 || lname.value.trim().length > 25) {
+                    error_tag[1].style.display = "block";
+                    correct_tag[1].style.display = "none";
+                    error_tag[1].innerHTML = "number of letters allowed [2-25]";
+                    fname.focus();
+                    return false;
+                }
+                else {
+                    error_tag[1].style.display = "none";
+                    correct_tag[1].style.display = "block";
+                }
+
+                if (email.value == "") {
+                    error_tag[2].style.display = "block";
+                    email.focus();
+                    return false;
+                }
+                else {
+                    error_tag[2].style.display = "none";
+                    correct_tag[2].style.display = "block";
+                }
+                if (password.value == "") {
+                    error_tag[3].style.display = "block";
+                    password.focus();
+                    return false;
+                }
+                else {
+                    error_tag[3].style.display = "none";
+                    correct_tag[3].style.display = "block";
+                }
+                if (phoneno.value == "") {
+                    error_tag[4].style.display = "block";
+                    //window.alert("Please enter your telephone number.");
+                    phoneno.focus();
+                    return false;
+                }
+                if (isNaN(phoneno.value) || phoneno.value < 1000000000 || phoneno.value > 9999999999) {
+                    error_tag[4].style.display = "block";
+                    //window.alert("Please  enter a correct phone number");
+                    phoneno.focus();
+                    return false;
+                }
+                else{
+                     error_tag[4].style.display = "none";
+                    correct_tag[4].style.display = "block";
+                }
+
+                if (gender[0].checked == false && gender[1].checked == false && gender[2].checked == false) {
+                    error_tag[5].style.display = "block";
+                    return false;
+                }
+                else {
+                    error_tag[5].style.display = "none";
+                    correct_tag[5].style.display = "block";
+                }
+                if (dob.value == "") {
+                    error_tag[6].style.display = "block";
+                    return false;
+                }
+                else {
+                    error_tag[6].style.display = "none";
+                    correct_tag[6].style.display = "block";
+                }
+                if (agree.checked != true) {
+                    error_tag[7].style.display = "block";
+                    return false;
+                }
+                else {
+                    error_tag[7].style.display = "none";
+                    correct_tag[7].style.display = "block";
+                }
+
+                alert('thanks for registering!');
+                return true;
+            }
+        </script>
+    </head>
+
+    <body>
+        <div class="form-container" style="margin-top: 15vh;">
+            <form name="signupform" method="POST" onsubmit="return signup()">
+                <h2 style="text-align: center;font-size: 6vh;padding: 2vw 2vh;">sign up</h2>
+                <fieldset style="width: 50%;margin: 0 auto;">
+                   <legend for="first name">first name :</legend>
+                   <input style="width: 89%;padding: 1.5vh 1.5vw;" type="text" name="first name" style="outline:  none;">
+                </fieldset>
+                <p class="error_tag">&times; invalid first name !</p>
+                <p class="correct_tag">&#10003; correct</p>
+
+
+                <fieldset style="width: 50%;margin: 0 auto;">
+                    <legend for="last name">last name :</legend>
+                    <input style="width: 89%;padding: 1.5vh 1.5vw;" type="text" name="last name">
+                </fieldset>
+                <p class="error_tag">&times; invalid last name !</p>
+                <p class="correct_tag">&#10003; correct</p>
+
+
+                <fieldset style="width: 50%;margin: 0 auto;">
+                    <legend for="email">email :</legend>
+                    <input style="width: 89%;padding: 1.5vh 1.5vw;" type="text" name="email">
+                </fieldset>
+                <p class="error_tag">&times; incorrect email !</p>
+                <p class="correct_tag">&#10003; correct</p>
+
+
+                <fieldset style="width: 50%;margin: 0 auto;">
+                    <legend for="password">password :</legend>
+                    <input style="width: 89%;padding: 1.5vh 1.5vw;" type="text" name="password" >
+                </fieldset>
+                <p class="error_tag">&times; incorrect password !</p>
+                <p class="correct_tag">&#10003; correct</p>
+                
+                
+                <fieldset style="width: 50%;margin: 0 auto;">
+                    <legend for="name">phone :</legend>
+                    <input style="width: 89%;padding: 1.5vh 1.5vw;" type="phone" name="phoneno" >
+                </fieldset>
+                <p class="error_tag">&times; incorrect phone number !</p>
+                <p class="correct_tag">&#10003; correct</p>
+                
+                
+                <div style="width: 50%;margin: 0 auto;margin-top:1vw">
+                    <fieldset style="width: 100%;margin: 0 auto;margin-left: -1vw;">
+                        <legend>gender</legend>
+                        <input type="radio" name="gender" value="male" class="gender">
+                        <label>male</label>
+                        <input type="radio" name="gender" value="female" class="gender">
+                        <label>female</label>
+                        <input type="radio" name="gender" value="other" class="gender">
+                        <label>other</label>
+                    </fieldset>
+                    <p class="error_tag support">&times; please select gender !</p>
+                    <p class="correct_tag support">&#10003; correct</p>
+
+                    <fieldset style="width: 100%;margin: 0 auto;margin-left: -1vw;">
+                       <legend>Date of Birth</legend>
+                       <input type="date" name="dob">
+                    </fieldset>
+                    <p class="error_tag support">&times; please enter valid data of birth !</p>
+                    <p class="correct_tag support">&#10003; correct</p>
+                   
+                    <br/><br/>
+
+                    <input type="checkbox" value="agree" id="Iagree">
+                    <label>I agree</label><br />
+                    <p class="error_tag support">&times; please agree !</p>
+                    <p class="correct_tag support">&#10003; correct</p>
+
+                    <br/>
+                    <a href="./login.html" style="color: rgb(255, 255, 255);">registered user</a><br /><br />
+                    <input type="submit" value="sign up" class="submit_btn">
+                </div>
+               </form>
+        </div>
+    </body>
+</html>

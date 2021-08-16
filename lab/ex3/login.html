@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>login</title>
+    <link rel="stylesheet" href="./register.css">
+<script>
+    function loginval(){
+        var email = document.forms["loginform"]["email"];
+        var password=document.forms["loginform"]["password"];
+        var cpassword=document.forms["loginform"]["confirm_password"];
+        var agree=document.getElementById("Iagree");
+        var error_tag= document.getElementsByClassName('error_tag');
+        var correct_tag=document.getElementsByClassName('correct_tag');
+        if(email.value.trim() == ""){
+            correct_tag[0].style.display = "none";
+            error_tag[0].style.display="block";
+            email.focus();
+            return false;
+        }
+        else {
+            error_tag[0].style.display = "none";
+            correct_tag[0].style.display="block";
+        }
+        if (password.value.trim() == "") {
+            correct_tag[1].style.display = "none";
+            error_tag[1].style.display = "block";
+            password.focus();
+            return false;
+        }
+        else {
+            error_tag[1].style.display = "none";
+            correct_tag[1].style.display = "block";
+        }
+        if (cpassword.value.trim() == "") {
+            correct_tag[2].style.display = "none";
+            error_tag[2].style.display = "block";
+            cpassword.focus();
+            return false;
+        }
+
+            if (cpassword.value.trim() !== cpassword.value.trim()) {
+                error_tag[2].style.display = "block";
+                correct_tag[2].style.display = "none";
+                error_tag[2].innerHTML = "password and confirm password does not match";
+                return false;
+            }
+            if(cpassword.value.trim() === cpassword.value.trim()){
+            error_tag[2].style.display = "none";
+            correct_tag[2].style.display = "block";
+            }
+
+        if(agree.checked != true){
+            error_tag[3].style.display = "block";
+            return false;
+        }
+
+        else{
+           error_tag[3].style.display = "none"; 
+           correct_tag[3].style.display = "block";
+        }
+
+        alert('thanks for signing in');
+        return true;
+    }
+</script>
+</head>
+<body>
+    <div  class="form-container" style="margin-top: 15vh;">
+        <form name="loginform" method="POST" onsubmit="return loginval()">
+            <h2 style="text-align: center;font-size: 6vh;padding: 2vw 2 vh;">Login</h2>
+            <fieldset style="width: 50%;margin: 0 auto;">
+                <legend for="email">email :</legend>
+                <input style="width: 89%;padding: 1.5vh 1.5vw;" type="text" name="email">
+            </fieldset>
+                <p class="error_tag">&times; incorrect email !</p>
+                <p class="correct_tag">&#10003; correct</p>
+            <fieldset style="width: 50%;margin: 0 auto;">
+                <legend for="password">password :</legend>
+                <input style="width: 89%;padding: 1.5vh 1.5vw;" type="text" name="password">
+            </fieldset>
+            <p class="error_tag">&times; incorrect password</p>
+            <p class="correct_tag">&#10003; correct</p>
+            <fieldset style="width: 50%;margin: 0 auto;">
+                <legend for="confirm_password">confirm password :</legend>
+                <input style="width: 89%;padding: 1.5vh 1.5vw;" type="text" name="confirm_password">
+            </fieldset>
+            <p class="error_tag">&times; please reconfirm the same password</p>
+            <p class="correct_tag">&#10003; correct</p>
+            <div style="width: 50%;margin: 0 auto;margin-top:1vw">
+                <input type="checkbox" value="agree" id="Iagree">
+                <label>I agree</label><br /><br />
+                <p class="error_tag support">&times; please agree the terms to continue</p>
+                <p class="correct_tag support">&#10003; accepted</p>
+                <a href="./signup.html" style="color: rgb(255, 255, 255);font-weight: bold;">Create an account</a><br/><br/>
+                <input type="submit" value="login" class="submit_btn">
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

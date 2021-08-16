@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>ebook library</title>
+    <link rel="stylesheet" href="./index.css">  
+    <!--adding fonts-->
+    
+   <link href="https://fonts.googleapis.com/css2?family=Courgette&family=Style+Script&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        <h1 class="header_title">EBook Library</h1>
+    </header>
+
+    <ul class="nav-bar">
+       <li class="nav-menu"><a class="nav-link" href="./index.html">home</a></li>
+       <li class="nav-menu"><a class="nav-link" href="./sections/contact.html">contact</a></li>
+       <li class="nav-menu"><a class="nav-link" href="./sections/gallery.html">gallery</a></li>
+       <li class="nav-menu"><a class="nav-link" href="./sections/aboutus.html">about us</a></li>
+       <li class="reg_btn"><a href="./login.html" class="nav-link">register</a></li>
+       <li class="dropdown">
+            <button class="dropbtn">categories</button>
+            <div class="dropdown-content">
+                <a href="./sections/art.html" class="section_link">art</a>
+                <a href="./sections/business.html" class="section_link">business</a>
+                <a href="./sections/technology.html" class="section_link">technology</a>
+            </div>
+        </li>
+    </ul>
+
+    <!--<ul class="sections_container">
+      <li class="section"><a class="section_link"></a>art</li>
+      <li class="section"><a class="section_link"></a>science</li>
+      <li class="section"><a class="section_link"></a>technology</li>
+    </ul>-->
+
+    
+
+    <!--<a href="./login.html"><button class="login_btn">login</button></a>-->
+    <div class="book_shelf" usemap="#books">
+        <h2 class="book_shelf_quotes">"The book collections"</h2>
+    </div>
+
+    <div class="cover_image_container">
+        <img class="cover_image" usemap="#books"
+            src="https://images.pexels.com/photos/207662/pexels-photo-207662.jpeg?auto=compress&cs=tinysrgb&dpr=2&w=500">
+        <h3 class="cover_image_desc">please select book from the above books shelf picture</h3>
+        <map name="books">
+            <area shape="rect" coords="84,84,84,84" href="./sections/art.html">
+            <area shape="rect" coords="114,294,370,450" href="./sections/business.html">
+        </map>
+    </div>
+    <div class="book_details">
+    <h3 class="book_details_title">available book sections</h3>
+    
+    <table>
+        <tr>
+            <td colspan="2">section name</td>
+            <td colspan="2">No of books</td>
+            <td>section no</td>
+        </tr>
+        <tr>
+            <td colspan="2">art</td>
+            <td colspan="2">500</td>
+            <td>1</td>
+        </tr>
+        <tr>
+            <td colspan="2">business</td>
+            <td colspan="2">267</td>
+            <td>2</td>
+        </tr>
+        <tr>
+            <td colspan="2">mystery</td>
+            <td colspan="2">503</td>
+            <td>3</td>
+        </tr>
+        <tr>
+            <td colspan="2">science</td>
+            <td colspan="2">768</td>
+            <td>4</td>
+        </tr>
+        <tr>
+            <td colspan="2">computer</td>
+            <td colspan="2">500</td>
+            <td>5</td>
+        </tr>
+    </table>
+    </div>
+
+    <iframe style="width: 100%;height: 75vh;" src="https://www.youtube.com/embed/GZosR1twLJs" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+
+
+    <footer class="footer">
+        <h2>Thank you</h2>
+    </footer>
+</body>
+<!--
+<frameset cols="25%,75%">
+    <frame src="frame1.html">
+        <frame src="frame2.html">
+</frameset>-->
+
+</html>

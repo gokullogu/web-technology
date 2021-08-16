@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment</title>
+    <style>
+        table,tr,td{
+            border: 2px solid black;
+            border-collapse: collapse;
+        }
+
+        td:nth-of-type(odd){
+            background-color: #e6f6c9;
+        }
+        td:nth-of-type(even){
+            background-color: #def8ae;
+        }
+
+        .cont{
+            width: 35%;
+            background-color:beige;
+            border:3.5px solid brown;
+            position: relative;
+            padding: 10px;
+        }
+
+        .cont .cont_desc{
+            overflow-y: scroll;
+            width: 350px;
+            background-color: yellow;
+            padding: 7px;
+            border: 5px dashed orange;
+            height: 200px;
+        }
+
+        .cont img{
+            margin-bottom: 20px;
+            border: 5px outset orange;
+        }
+    </style>
+</head>
+<body>
+    <h2>1)A simple table</h2>
+    <table>
+        <tr>
+            <td style="font-variant: small-caps;font-size: 18px;text-align: center;color: white;background-color: #6f9e17;font-weight: bold;" colspan="6">student mark sheet</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>Maths</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>pPhysics</td>
+            <td>General knowledge</td>
+        </tr>
+        <tr>
+            <td>David</td>
+            <td>85</td>
+            <td>87</td>
+            <td>88</td>
+            <td>92</td>
+            <td>88</td>
+        </tr>
+        <tr>
+            <td>Richard</td>
+            <td>91</td>
+            <td>81</td>
+            <td>78</td>
+            <td>71</td>
+            <td>74</td>
+        </tr>
+        <tr>
+            <td>John</td>
+            <td>81</td>
+            <td>86</td>
+            <td>88</td>
+            <td>84</td>
+            <td>92</td>
+        </tr>
+        <tr>
+            <td>Tony</td>
+            <td>84</td>
+            <td>86</td>
+            <td>87</td>
+            <td>82</td>
+            <td>81</td>
+        </tr>
+        <tr>
+            <td>Scott</td>
+            <td>71</td>
+            <td>79</td>
+            <td>82</td>
+            <td>88</td>
+            <td>89</td>
+        </tr>
+    </table><br/>
+
+    <h2>2)A box model</h2>
+    <div class="cont">
+       <h1>Fox</h1>
+       <img class="cont_img" src="./samimg.png">
+       <div class="cont_desc">
+          <p><span style="font-weight: bold;text-decoration: solid underline;">Fox is a common name for many
+        species of carnivorous mammals belonging to the Carnidae family.</span>
+            Foxes are the small to medium-sized cards(slighlty smaller than the median-sized domestic dog).
+            characterized by possessing a long narrow snout, and a bushy tail (or brush).
+        </p>
+        <p><span style="font-weight: bold;text-decoration: solid underline;">Fox is a common name for many
+                species of carnivorous mammals belonging to the Carnidae family.</span>
+            Foxes are the small to medium-sized cards(slighlty smaller than the median-sized domestic dog).
+            characterized by possessing a long narrow snout, and a bushy tail (or brush).
+        </p>
+       </div>
+    </div>
+</body>
+</html>
